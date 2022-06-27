@@ -30,4 +30,4 @@
 ## Author
 
 - Twitter - [@Victor_Abiye](https://www.twitter.com/Victor_Abiye)
-- Linkedin - [@AbiyeIniabere](https://wwww.linkedin.com/in/abiye-iniabere-6715391b3)
+- Linkedin - [@AbiyeIniabere](https://www.linkedin.com/in/abiye-iniabere-6715391b3)
