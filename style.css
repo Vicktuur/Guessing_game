@@ -1,0 +1,109 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(120deg,rgb(101, 226, 143),rgb(26, 224, 102)); 
+}
+/* Heading */
+.content{
+    text-align: center;
+}
+.image{
+    height:100px;
+    width: auto;
+    border-radius: 50%;
+    animation: rotation 5s infinite linear;
+}
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(359deg);
+    }
+}
+/* Form */
+fieldset{
+    margin:auto;
+    width: 50%;
+    border-radius: 10px;   
+}
+.heading{
+    font-family: 'Titan One', cursive;
+}
+.container{
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    background: linear-gradient(120deg,rgb(28, 167, 247),rgb(2, 106, 155));
+    border-radius: 10px;
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+    color:white;
+}
+.container #guess{
+    background-color: rgb(185, 64, 64);
+    padding: 20px;
+    width: 70%;
+    margin: auto;
+    border-radius: 10px;
+}
+.heading h2{
+    color:rgb(10, 10, 236);
+}
+.heading span{
+    color:rgb(240, 0, 48);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+/* Input */
+input{
+    width: 100%;
+    padding: 10px 15px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+}
+/* Button */
+#btn{
+    padding: 15px 60px;
+    color:white;
+    background: linear-gradient(120deg,hsl(176,68%,64%),hsl(198,60%,50%));
+    border-radius: 50px;
+    border: none;
+    font-family: "Raleway",sans-serif;
+    font-size:large;
+    cursor: pointer;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+}
+#btn:hover{
+    background: rgb(3, 255, 238);
+}
+/* Footer */
+.bottom{
+    width:50%;
+    margin: auto;
+    background: linear-gradient(120deg,rgb(28, 167, 247),rgb(2, 106, 155));
+    padding-top: 5px;
+    text-align: center;
+    padding-bottom: 5px;
+    margin-top: 5%;
+    color: white;
+    font-size: 12px;
+    border-radius: 20px;
+}
+/* Social media links */
+.fa {
+    padding: 5px;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50px;
+    border: 1px solid white;
+    color: white;
+}
+a:hover{
+    color: rgb(3, 255, 238);
+}
+/* Copyright */
+footer p{
+    text-align: center;
+    font-size: 12px;
+}

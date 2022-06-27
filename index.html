@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Titan+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="images/images(1).jpeg" type="image/jpeg">
+    <link rel="stylesheet" href="style.css">
+    <title>Guessing game</title>
+</head>
+<body>
+    <!--Heading-->
+    <div class="content">
+        <div class="heading">
+            <h2>Random Guessing <span>GAME</span></h2>
+            <p><img src="images/images(2).jpeg" class="image"></p>
+        </div>
+        <!--Form-->
+        <div class="container">
+            <p id="guess">Guess a number between (1-10)</p>
+            <p id="outputText">Enter a Number Below:</p>
+            <fieldset style="width:40%">
+                <legend>Input a number between (1-10)</legend>
+                <input type="number" id="userInput">
+            </fieldset>
+            <br>
+            <button id="btn">Enter</button>
+        </div>
+    </div>
+    <!--Footer-->
+    <footer>
+        <div class="bottom">
+            <!--Social media links-->
+            <p>Follow for more:</p>
+            <a href="https://github.com/Vicktuur" class="fa fa-github"></a>
+            <a href="https://twitter.com/Victor_Abiye" class="fa fa-twitter"></a>
+            <a href="https://www.linkedin.com/in/abiye-iniabere-6715391b3" class="fa fa-linkedin"></a>
+        </div>
+        <p>&copy 2022 Vicktuur</p>
+    </footer>
+
+    <script>
+        //user Prompt
+        confirm("Ready for a Guessing Game?")
+        
+        window.onload = (e) => {
+            let btn = document.getElementById("btn");
+            let output = document.getElementById("outputText");
+            //Random Number Initiator
+            let randNum = Math.floor(Math.random() * 10);
+            //Event Listener
+            btn.addEventListener("click", (e) => {
+                let input = document.getElementById("userInput").value;
+                //Conditions
+                if(input == randNum){
+                    output.innerHTML = `You guessed right, the number is ${randNum}... CONGRATULATIONS`;
+                }
+                else if(input < randNum){
+                    output.innerHTML = `You guessed too LOW`;
+                }
+                else if(input > randNum){
+                    output.innerHTML = `You guessed too HIGH`;
+                }
+            })
+        }
+    </script>
+</body>
+</html>
