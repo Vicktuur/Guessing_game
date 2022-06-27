@@ -17,7 +17,7 @@
 
 ### Links
 
-- Live Site URL: [guessing-game.com](https:guessing-games.netlify.app)
+- Live Site URL: [guessing-game.com](https://guessing-games.netlify.app)
 
 ## My process
 
